@@ -20,10 +20,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} min-h-screen min-w-screen flex flex-col items-center bg-black`}
+        className={`${inter.className} min-h-screen min-w-screen flex flex-col items-center bg-black overflow-x-hidden`}
       >
         <Navbar />
-        <section className='w-[640px] grow'>{children}</section>
+        <section className='md:w-[640px] w-full grow md:px-0 px-4'>
+          {children}
+        </section>
         <Footer />
       </body>
     </html>
