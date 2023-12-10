@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import images from '@/data/postcardImages';
+import { images } from '@/constants';
 
 export default function Postcard() {
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
@@ -29,11 +29,25 @@ export default function Postcard() {
               src={images[currentImageIndex].image}
               alt={images[currentImageIndex].title}
               width={640}
-              height={320}
+              height={420}
             />
           </div>
         </div>
-        <div className='postcard-back'>{images[currentImageIndex].title}</div>
+
+        <div className='postcard-back'>
+          <p className='text-xl text-grey font-regular'>
+            {images[currentImageIndex].title}
+          </p>
+
+          <div className='flex items-center gap-2'>
+            <p className='text-grey'>
+              {images[currentImageIndex].coordinates} ·
+            </p>
+            <p className='text-off-white font-regular text-right'>
+              {images[currentImageIndex].location}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
