@@ -15,7 +15,7 @@ export default function WorkSummary() {
         <div className='w-full p-2 bg-secondary-black'>
           <Image
             src={'/case-studies/blossom-thumbnail-about.png'}
-            alt=''
+            alt='Work sample for Blossom Social'
             width={632}
             height={412}
           />
