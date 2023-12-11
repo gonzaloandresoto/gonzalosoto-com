@@ -1,7 +1,15 @@
 export default function Leadership() {
   return (
-    <div className='w-full h-full flex flex-col gap-4'>
-      <p className='text-lg text-white font-semibold'>Leadership</p>
+    <div className='w-full h-full flex flex-col gap-12'>
+      <div className='flex flex-col gap-4'>
+        <p className='text-lg text-white font-semibold'>Leadership</p>
+        <p className='text-sm text-off-white font-regular'>
+          I've held various roles amongst undergraduate tech organizations,
+          primarily within the AI space. Through them, I've developed a love for
+          community building.
+        </p>
+      </div>
+
       <div className='w-full h-full flex flex-col p-2 bg-secondary-black'>
         <div className='flex sm:flex-row flex-col h-full'>
           <div className='flex-col w-full grow'>
@@ -51,8 +59,6 @@ export default function Leadership() {
             </div>
           </div>
         </div>
-
-        {/* <div className='w-full h-[88px] bg-[#FF57BB]'>Ripple</div> */}
       </div>
     </div>
   );
