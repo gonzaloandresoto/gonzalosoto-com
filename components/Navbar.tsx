@@ -10,7 +10,9 @@ export default function Navbar() {
             key={index}
             href={item.route}
           >
-            <p className='text-white hover:text-off-white'>{item.title}</p>
+            <p className='sm:text-base text-sm text-white hover:text-off-white'>
+              {item.title}
+            </p>
           </Link>
         ))}
       </div>

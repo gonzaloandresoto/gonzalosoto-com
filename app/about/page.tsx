@@ -1,5 +1,6 @@
 import Leadership from '@/components/Leadership';
-import Postcard from '@/components/postcard';
+import MobilePostcard from '@/components/MobilePostcard';
+import Postcard from '@/components/Postcard';
 
 export default function About() {
   return (
@@ -25,6 +26,7 @@ export default function About() {
         </div>
       </div>
 
+      <MobilePostcard />
       <Postcard />
 
       <Leadership />

@@ -5,7 +5,7 @@ import { footerLinks } from '@/constants';
 export default function Footer() {
   return (
     <div className='w-screen flex justify-center md:px-0 px-4'>
-      <div className='w-[640px] flex gap-6 justify-end pb-8'>
+      <div className='w-[640px] flex gap-6 sm:justify-end justify-center pb-10 pt-4'>
         {footerLinks.map((item, index) => (
           <Link
             key={index}

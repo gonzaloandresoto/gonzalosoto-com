@@ -25,8 +25,14 @@ export const images: Image[] = [
     coordinates: '35.68776° N, 139.71484° E',
   },
   {
+    image: '/postcardImages/huaraz-parked.jpeg',
+    title: 'Avenida las flores.',
+    location: 'Huaraz, Peru',
+    coordinates: '9.52128° S, 77.52374° W',
+  },
+  {
     image: '/postcardImages/japan-pilons.jpg',
-    title: 'Yeah, this happened.',
+    title: 'What were they trying to show me?',
     location: 'Shinjuku, Japan',
     coordinates: '35.69260° N, 139.70549° E',
   },

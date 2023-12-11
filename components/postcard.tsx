@@ -16,7 +16,7 @@ export default function Postcard() {
   };
 
   return (
-    <div className='postcard'>
+    <div className='postcard hidden sm:block'>
       <div
         onClick={handleClick}
         className={`postcard-inner ${
