@@ -4,8 +4,8 @@ export default function Leadership() {
       <div className='flex flex-col gap-4'>
         <p className='text-lg text-white font-semibold'>Leadership</p>
         <p className='text-sm text-off-white font-regular'>
-          I've held various roles amongst undergraduate tech organizations,
-          primarily within the AI space. Through them, I've developed a love for
+          Ive held various roles amongst undergraduate tech organizations,
+          primarily within the AI space. Through them, Ive developed a love for
           community building.
         </p>
       </div>
