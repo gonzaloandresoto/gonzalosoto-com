@@ -7,19 +7,19 @@ interface Image {
 
 export const images: Image[] = [
   {
-    image: '/postcardImages/portugal-field.jpg',
+    image: '/postcardImages/portugal-field.jpeg',
     title: 'A great place to hike with friends and drink fresh orange juice.',
     location: 'Cabo da Roca, Portugal',
     coordinates: '38.78382° N, 9.49477° W',
   },
   {
-    image: '/postcardImages/portugal-stones.jpg',
+    image: '/postcardImages/portugal-stones.jpeg',
     title: 'Incomparable serenity, balance, and peace.',
     location: 'Praia dos Beijinhos, Portugal',
     coordinates: '37.10084° N, 8.37442° W',
   },
   {
-    image: '/postcardImages/japan-street.jpg',
+    image: '/postcardImages/japan-street.jpeg',
     title: 'Remember feeling lost, yet immersed.',
     location: 'Shinjuku, Japan',
     coordinates: '35.68776° N, 139.71484° E',
@@ -31,7 +31,7 @@ export const images: Image[] = [
     coordinates: '9.52128° S, 77.52374° W',
   },
   {
-    image: '/postcardImages/japan-pilons.jpg',
+    image: '/postcardImages/japan-pilons.jpeg',
     title: 'What were they trying to show me?',
     location: 'Shinjuku, Japan',
     coordinates: '35.69260° N, 139.70549° E',

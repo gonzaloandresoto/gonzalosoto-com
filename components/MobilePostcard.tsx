@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { images } from '@/constants';
 
@@ -10,6 +10,13 @@ export default function MobilePostcard() {
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 1600);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div
