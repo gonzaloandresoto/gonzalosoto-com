@@ -1,6 +1,6 @@
 import Leadership from '@/components/Leadership';
 import MobilePostcard from '@/components/MobilePostcard';
-import Postcard from '@/components/Postcard';
+import Postcard from '@/components/DesktopPostcard';
 
 export default function About() {
   return (

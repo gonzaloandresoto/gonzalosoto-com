@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { images } from '@/constants';
 
-export default function Postcard() {
+export default function DesktopPostcard() {
   const [isFlipped, setIsFlipped] = useState<boolean>(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
