@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
+
 import { Inter } from 'next/font/google';
 import './globals.css';
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -25,6 +28,7 @@ export default function RootLayout({
         <Navbar />
         <section className='md:w-[640px] w-full grow md:px-0 px-4'>
           {children}
+          <Analytics />
         </section>
         <Footer />
       </body>
