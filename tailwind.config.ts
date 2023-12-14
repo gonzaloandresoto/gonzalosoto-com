@@ -13,6 +13,7 @@ const config: Config = {
       grey: '#A1A1A1',
       black: '#121212',
       'secondary-black': '#282828',
+      'tertiary-black': '#1C1A1C',
     },
     extend: {
       backgroundImage: {

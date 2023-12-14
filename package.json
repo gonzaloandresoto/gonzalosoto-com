@@ -11,9 +11,12 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@vercel/analytics": "^1.1.1",
+    "gray-matter": "^4.0.3",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

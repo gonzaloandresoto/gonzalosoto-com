@@ -73,3 +73,13 @@
     scrollbar-width: none;
   }
 }
+
+/* globals.css */
+.essay-content h2 {
+  @apply text-2xl font-semibold text-white pt-4;
+}
+
+/* Style for p tags within essay content */
+.essay-content p {
+  @apply text-base text-off-white;
+}
