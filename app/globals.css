@@ -83,3 +83,13 @@
 .essay-content p {
   @apply text-base text-off-white;
 }
+
+.essay-content li {
+  @apply text-base text-off-white;
+  list-style: disc; /* Change the bullet style here */
+  list-style-position: inside;
+}
+
+.essay-content img {
+  @apply w-full mb-8;
+}
