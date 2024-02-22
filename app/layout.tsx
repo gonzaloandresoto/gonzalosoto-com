@@ -1,18 +1,16 @@
 import type { Metadata } from 'next';
-// import { Analytics } from '@vercel/analytics/react';
 
 import { Inter } from 'next/font/google';
 import './globals.css';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gonzalo Soto',
+  title: 'Gonzalo Soto Mallqui',
   description:
-    'gonzalo is a designer, product leader, and developer based in toronto, canada.',
+    'gonzalo soto mallqui is a designer, product leader, and developer based in toronto, canada.',
 };
 
 export default function RootLayout({
@@ -23,14 +21,14 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.className} min-h-screen min-w-screen flex flex-col items-center bg-black overflow-x-hidden no-scrollbar`}
+        className={`${inter.className} min-h-screen min-w-screen flex flex-col items-center bg-tertiary-grey overflow-x-hidden no-scrollbar`}
       >
-        <Navbar />
-        <section className='md:w-[640px] w-full grow md:px-0 px-4'>
+        {/* <Navbar /> */}
+        <section className='md:w-[880px] w-full grow md:px-0 px-2'>
           {children}
-          {/* <Analytics /> */}
+          <Analytics />
         </section>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

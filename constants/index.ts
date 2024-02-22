@@ -1,3 +1,5 @@
+import { Experience } from '@/types';
+
 interface Image {
   image: string;
   title: string;
@@ -50,7 +52,7 @@ export const navbarLinks: NavbarLink[] = [
   },
   {
     title: 'Writing',
-    route: '/blog',
+    route: '/writing',
   },
   {
     title: 'Work',
@@ -66,8 +68,8 @@ interface FooterLink {
 
 export const footerLinks: FooterLink[] = [
   {
-    title: 'Twitter',
-    link: 'https://twitter.com/gonzalosm77',
+    title: 'Email',
+    link: 'mailto:gonza.soto@outlook.com',
     icon: '/icons/twitter.svg',
   },
   {
@@ -75,14 +77,64 @@ export const footerLinks: FooterLink[] = [
     link: 'https://github.com/gonzaloandresoto',
     icon: '/icons/github.svg',
   },
-  {
-    title: 'Medium',
-    link: 'https://medium.com/@gonzalosoto7',
-    icon: '/icons/medium.svg',
-  },
+
   {
     title: 'LinkedIn',
     link: 'https://www.linkedin.com/in/gonzalo-s/',
     icon: '/icons/linkedin.svg',
+  },
+];
+
+export const workExperiences: Experience[] = [
+  {
+    role: 'Product & Design lead',
+    company: 'Blossom Social',
+    date: '2022 – 2023',
+    description: `Blossom is Canada’s 1st social investing app backed by $1.5M. As the first hire, I led product & design from 0-1 for multiple products.`,
+    image: '/experiences/blossomthumbnail.jpg',
+    slug: 'blossom-social',
+  },
+  {
+    role: 'Product Manager',
+    company: 'Publicis Sapient',
+    date: '2022',
+    description: `Publicis is a digital consulting company. As a PM, I designed and oversaw the development of an internal tool to increase deliverable compliance with the WCAGs.`,
+    image: '/experiences/publicisthumbnail.jpg',
+    slug: 'publicis-sapient',
+  },
+  {
+    role: 'President & Co-Chair',
+    company: 'QMIND & CUCAI',
+    date: '2021 – 2023',
+    description: `I led an undergraduate organization to host Canada’s largest AI conference ($XX,000 funding) and output 35 research papers & client projects.`,
+    image: '/experiences/cucaithumbnail.jpg',
+    slug: 'qmind-cucai',
+  },
+  {
+    role: 'Founder',
+    company: 'iWannaLearn',
+    date: '2024',
+    description: `IWL is an AI-enhanced learning experience, built to harness the limitless knowledge of LLMs, into digestible courses. As the sole founder, I coded and designed the app.`,
+    image: '/experiences/iwlthumbnail.jpg',
+    slug: 'iwannalearn',
+  },
+];
+
+export const communityExperiences: Experience[] = [
+  {
+    role: 'Fellow',
+    company: 'The Cansbridge Fellowship',
+    date: '2022',
+    description: `The Cansbridge Fellowship (2.4% acceptance rate) is awarded to Canada’s brightest undergraduate students. Recipients receive $10,000 to explore internships in Asia.`,
+    image: '/experiences/cansbridgethumbnail.jpg',
+    slug: 'cansbridge-fellowship',
+  },
+  {
+    role: 'Fellow',
+    company: 'Ripple Ventures',
+    date: '2022',
+    description: `The Ripple Ventures Fellowship program empowers founders to build B2B software companies from idea to revenue and funding.`,
+    image: '/experiences/ripplethumbnail.jpg',
+    slug: 'ripple-fellowship',
   },
 ];

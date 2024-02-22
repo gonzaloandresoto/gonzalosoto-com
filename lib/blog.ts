@@ -17,6 +17,7 @@ interface Essay {
   image?: string;
   date?: string;
   content?: string;
+  tag?: string;
 }
 
 export function getEssayBySlug(
@@ -51,7 +52,22 @@ export function getAllEssays(fields: (keyof Essay)[] = []): Essay[] {
       const dateA = a.date || '0000-00-00';
       const dateB = b.date || '0000-00-00';
       return dateA > dateB ? -1 : 1;
-    });
+    })
+    .filter((post) => post.tag === 'essay');
+
+  return posts;
+}
+
+export function getAllCases(fields: (keyof Essay)[] = []): Essay[] {
+  const slugs = getEssaySlugs();
+  const posts = slugs
+    .map((slug) => getEssayBySlug(slug, fields))
+    .sort((a, b) => {
+      const dateA = a.date || '0000-00-00';
+      const dateB = b.date || '0000-00-00';
+      return dateA > dateB ? -1 : 1;
+    })
+    .filter((post) => post.tag === 'case');
 
   return posts;
 }

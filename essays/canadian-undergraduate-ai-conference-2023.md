@@ -1,8 +1,9 @@
 ---
-title: dealing with set-backs, canada's largest ai conference
+title: Dealing with set-backs, Canada's largest AI conference
 description: Challenges of running a large-scale event, dealing with setbacks, and creative problem-solving for leaders.
 image: ''
 date: '2023-04-11'
+tag: 'essay'
 ---
 
 <img src='/essay-images/cucai-banner-group.jpeg' alt='CUCAI 2023 organizing team group photo.'/>

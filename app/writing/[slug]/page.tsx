@@ -34,9 +34,7 @@ async function Essay({ params: { slug } }: { params: { slug: string } }) {
         <p className='text-sm text-grey font-medium'>{essay.date}</p>
         <h1 className='text-2xl text-white font-semibold'>{essay.title}</h1>
       </div>
-
       <div className='bg-grey h-[1px] w-[120px]'></div>
-
       <div
         className='flex flex-col gap-4 py-6 essay-content'
         dangerouslySetInnerHTML={{ __html: content }}
