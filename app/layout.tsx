@@ -12,10 +12,10 @@ export const metadata: Metadata = {
   description:
     'Gonzalo Soto Mallqui is an engineer, designer, and product leader based in Toronto, Canada.',
   openGraph: {
-    images: ['/opengraph-image.jpg'],
+    images: '/opengraph-image.jpg',
   },
   twitter: {
-    images: ['/twitter-image.jpg'],
+    images: '/twitter-image.jpg',
   },
 };
 
