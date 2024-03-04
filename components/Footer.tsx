@@ -4,10 +4,7 @@ import { footerLinks } from '@/constants';
 
 export default function Footer() {
   return (
-    <div
-      className='flex grow gap-8 items-center bg-white rounded-2xl px-5 py-6'
-      bg-white
-    >
+    <div className='flex grow gap-8 items-center section'>
       {footerLinks.map((item, index) => (
         <Link
           key={index}

@@ -12,7 +12,7 @@ export default function ExperienceGrid({
   title,
 }: ExperienceGridProps) {
   return (
-    <div className='grid gap-6 bg-white rounded-2xl py-8 px-6'>
+    <div className='grid gap-6 section'>
       <div>
         <h2 className='text-xl text-primary-grey font-semibold font-lexend-deca'>
           {title}
@@ -38,13 +38,13 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
     <Link
       href='/'
-      className='grid gap-3 group'
+      className='relative grid gap-3 group'
     >
       <Image
         src={experience.image}
         alt={experience.company}
-        width={400}
-        height={200}
+        width={720}
+        height={320}
       />
       <h3 className='text-base text-primary-blue font-bold font-lexend-deca group-hover:underline group-hover:decoration-wavy underline-offset-4'>
         {experience.company}
