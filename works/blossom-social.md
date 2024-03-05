@@ -1,5 +1,5 @@
 ---
-title: Leading Product & Design at Blossom
+title: Leading Product & Design at Blossom Social
 description: My experience building Canada's largest network of retail investors.
 image: '/case-studies/blossom-thumbnail-about.png'
 date: '2023-04-11'

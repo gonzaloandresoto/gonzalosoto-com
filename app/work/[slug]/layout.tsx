@@ -8,18 +8,19 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }) {
-  const { title, description } = await getWorkBySlug(slug);
+  const { title, description } = await getWorkBySlug(slug, [
+    'title',
+    'description',
+  ]);
 
-  if (title && description) {
-    return {
+  return {
+    title: title,
+    description: description,
+    openGraph: {
       title: title,
       description: description,
-      openGraph: {
-        title: title,
-        description: description,
-      },
-    };
-  }
+    },
+  };
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {
