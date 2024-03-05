@@ -2,7 +2,7 @@
 title: Leading Product & Design at Blossom Social
 description: My experience building Canada's largest network of retail investors.
 image: '/case-studies/blossom-thumbnail-about.png'
-date: '2023-04-11'
+date: '2023-10-11'
 tag: 'work'
 ---
 
@@ -49,7 +49,12 @@ Blossom was often praised for our ability to rapidly ship high-quality updates t
   <figcaption>Daily Investor Trivia, Investing Dictionary, and Module Completion Screen.</figcaption>
 </figure>
 
-## Blossom PRO
+## Portfolio & Blossom PRO
+
+<figure>
+  <img src="/works-snapshots/blossom/portfolio.jpg" alt="Blossom Portfolio">
+  <figcaption>Portfolio Private View, Public View, and PRO Widgets (Goal & Performance Comparison).</figcaption>
+</figure>
 
 <figure>
   <img src="/works-snapshots/blossom/pro.jpg" alt="Blossom PRO">
