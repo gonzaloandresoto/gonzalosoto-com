@@ -37,7 +37,7 @@ interface ExperienceCardProps {
 function ExperienceCard({ experience }: ExperienceCardProps) {
   return (
     <Link
-      href='/'
+      href={experience.active ? `/work/${experience.slug}` : '/'}
       className='relative grid gap-3 group'
     >
       <Image

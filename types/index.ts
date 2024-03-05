@@ -5,4 +5,5 @@ export interface Experience {
   description: string;
   image: string;
   slug: string;
+  active: boolean;
 }

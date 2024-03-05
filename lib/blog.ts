@@ -5,9 +5,14 @@ import { remark } from 'remark';
 import html from 'remark-html';
 
 const postsDirectory = join(process.cwd(), 'essays');
+const worksDirectory = join(process.cwd(), 'works');
 
 export function getEssaySlugs() {
   return fs.readdirSync(postsDirectory);
+}
+
+export function getWorkSlugs() {
+  return fs.readdirSync(worksDirectory);
 }
 
 interface Essay {
@@ -52,22 +57,49 @@ export function getAllEssays(fields: (keyof Essay)[] = []): Essay[] {
       const dateA = a.date || '0000-00-00';
       const dateB = b.date || '0000-00-00';
       return dateA > dateB ? -1 : 1;
-    })
-    .filter((post) => post.tag === 'essay');
+    });
 
   return posts;
 }
 
-export function getAllCases(fields: (keyof Essay)[] = []): Essay[] {
-  const slugs = getEssaySlugs();
+export function getWorkBySlug(
+  slug: string,
+  fields: (keyof Essay)[] = []
+): Essay {
+  try {
+    const realSlug = slug.replace(/\.md$/, '');
+    const fullPath = join(worksDirectory, `${realSlug}.md`);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const { data, content } = matter(fileContents);
+
+    const items: Partial<Essay> = {};
+
+    fields.forEach((field) => {
+      if (field === 'slug') {
+        items[field] = realSlug;
+      } else if (field === 'content') {
+        items[field] = content;
+      } else if (data[field]) {
+        items[field] = data[field];
+      }
+    });
+
+    return items;
+  } catch (error) {
+    throw new Error('Error getting work by slug');
+    return {};
+  }
+}
+
+export function getAllWorks(fields: (keyof Essay)[] = []): Essay[] {
+  const slugs = getWorkSlugs();
   const posts = slugs
-    .map((slug) => getEssayBySlug(slug, fields))
+    .map((slug) => getWorkBySlug(slug, fields))
     .sort((a, b) => {
       const dateA = a.date || '0000-00-00';
       const dateB = b.date || '0000-00-00';
       return dateA > dateB ? -1 : 1;
-    })
-    .filter((post) => post.tag === 'case');
+    });
 
   return posts;
 }

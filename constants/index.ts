@@ -93,6 +93,7 @@ export const workExperiences: Experience[] = [
     description: `Blossom is Canada’s 1st social investing app backed by $1.5M. As the first hire, I led product & design from 0-1 for multiple products.`,
     image: '/experiences/blossomthumbnail.jpg',
     slug: 'blossom-social',
+    active: true,
   },
   {
     role: 'Product Manager',
@@ -101,6 +102,7 @@ export const workExperiences: Experience[] = [
     description: `Publicis is a digital consulting company. As a PM, I designed and oversaw the development of an internal tool to increase deliverable compliance with the WCAGs.`,
     image: '/experiences/publicisthumbnail.jpg',
     slug: 'publicis-sapient',
+    active: false,
   },
   {
     role: 'President & Co-Chair',
@@ -109,6 +111,7 @@ export const workExperiences: Experience[] = [
     description: `I led an undergraduate organization to host Canada’s largest AI conference ($XX,000 funding) and output 35 research papers & client projects.`,
     image: '/experiences/cucaithumbnail.jpg',
     slug: 'qmind-cucai',
+    active: false,
   },
   {
     role: 'Founder',
@@ -117,6 +120,7 @@ export const workExperiences: Experience[] = [
     description: `IWL is an AI-enhanced learning experience, built to harness the limitless knowledge of LLMs, into digestible courses. As the sole founder, I coded and designed the app.`,
     image: '/experiences/iwlthumbnail.jpg',
     slug: 'iwannalearn',
+    active: false,
   },
 ];
 
@@ -128,6 +132,7 @@ export const communityExperiences: Experience[] = [
     description: `The Cansbridge Fellowship (2.4% acceptance rate) is awarded to Canada’s brightest undergraduate students. Recipients receive $10,000 to explore internships in Asia.`,
     image: '/experiences/cansbridgethumbnail.jpg',
     slug: 'cansbridge-fellowship',
+    active: false,
   },
   {
     role: 'Fellow',
@@ -136,5 +141,6 @@ export const communityExperiences: Experience[] = [
     description: `The Ripple Ventures Fellowship program empowers founders to build B2B software companies from idea to revenue and funding.`,
     image: '/experiences/ripplethumbnail.jpg',
     slug: 'ripple-fellowship',
+    active: false,
   },
 ];

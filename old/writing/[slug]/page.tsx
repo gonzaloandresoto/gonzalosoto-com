@@ -32,7 +32,7 @@ async function Essay({ params: { slug } }: { params: { slug: string } }) {
     <div className='flex flex-col gap-4'>
       <div className='w-full flex flex-col gap-2 py-4'>
         <p className='text-sm text-grey font-medium'>{essay.date}</p>
-        <h1 className='text-2xl text-white font-semibold'>{essay.title}</h1>
+        <h1 className='text-2xl text-black font-semibold'>{essay.title}</h1>
       </div>
       <div className='bg-grey h-[1px] w-[120px]'></div>
       <div

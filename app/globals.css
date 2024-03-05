@@ -50,24 +50,34 @@
   }
 }
 
+/* --------------- MARKDOWN TO HTML STYLES --------------- */
+
 /* globals.css */
 .essay-content h2 {
-  @apply text-2xl font-semibold text-white pt-4;
+  @apply text-2xl font-semibold text-black pt-4;
 }
 
 /* Style for p tags within essay content */
 .essay-content p {
-  @apply text-base text-off-white;
+  @apply text-base text-black;
 }
 
 .essay-content li {
-  @apply text-base text-off-white;
+  @apply text-base text-black;
   list-style: disc; /* Change the bullet style here */
   list-style-position: inside;
 }
 
 .essay-content img {
-  @apply w-full mb-8;
+  @apply w-full;
+}
+
+.essay-content figure {
+  @apply mb-4 grid gap-4;
+}
+
+.essay-content figcaption {
+  @apply text-sm text-primary-grey font-medium text-center px-4;
 }
 
 /* --------------- NEW STYLES --------------- */

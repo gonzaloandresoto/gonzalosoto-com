@@ -1,24 +1,10 @@
-import Essay from '@/app/writing/[slug]/page';
-import {
-  getEssayBySlug,
-  convertMarkdownToHtml,
-  getAllEssays,
-} from '@/lib/blog';
-
-export async function generateMetadata({
-  params: { slug },
-}: {
-  params: { slug: string };
-}) {
-  const { title, description } = await getEssayBySlug(slug);
-  return {
-    title,
-    description,
-  };
-}
+import Essay from '@/old/writing/[slug]/page';
+import { convertMarkdownToHtml, getWorkBySlug, getAllWorks } from '@/lib/blog';
+import { formatDate } from '@/lib/utils';
+import { redirect } from 'next/navigation';
 
 async function Work({ params: { slug } }: { params: { slug: string } }) {
-  const work = await getEssayBySlug(slug, [
+  const work = await getWorkBySlug(slug, [
     'slug',
     'title',
     'date',
@@ -30,14 +16,16 @@ async function Work({ params: { slug } }: { params: { slug: string } }) {
   const content = await convertMarkdownToHtml(work.content || '');
 
   return (
-    <div className='flex flex-col gap-4'>
-      <div className='w-full flex flex-col gap-2 py-4'>
-        <p className='text-sm text-grey font-medium'>{work.date}</p>
-        <h1 className='text-2xl text-white font-semibold'>{work.title}</h1>
+    <div className='grid gap-4 section'>
+      <div className='w-full flex flex-col gap-2'>
+        <p className='text-sm text-black font-medium'>
+          {formatDate(work.date || '')}
+        </p>
+        <h1 className='text-2xl text-black font-semibold'>{work.title}</h1>
       </div>
-      <div className='bg-grey h-[1px] w-[120px]'></div>
+
       <div
-        className='flex flex-col gap-4 py-6 essay-content'
+        className='grid gap-4 essay-content'
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>
@@ -45,11 +33,11 @@ async function Work({ params: { slug } }: { params: { slug: string } }) {
 }
 
 export async function generateStaticParams() {
-  const works = await getAllEssays();
+  const works = await getAllWorks();
 
   return works.map((work) => ({
     slug: work.slug,
   }));
 }
 
-export default Essay;
+export default Work;
