@@ -53,7 +53,7 @@ Blossom was often praised for our ability to rapidly ship high-quality updates t
 
 <figure>
   <img src="/works-snapshots/blossom/portfolio.jpg" alt="Blossom Portfolio">
-  <figcaption>Portfolio Private View, Public View, and PRO Widgets (Goal & Performance Comparison).</figcaption>
+  <figcaption>Portfolio Public View, Private View, and PRO Widgets (Goal & Performance Comparison).</figcaption>
 </figure>
 
 <figure>
