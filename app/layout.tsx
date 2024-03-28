@@ -8,6 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.gonzalosoto.ca'),
   title: 'Gonzalo Soto Mallqui',
   description:
     'Gonzalo Soto Mallqui is an engineer, designer, and product leader based in Toronto, Canada.',
