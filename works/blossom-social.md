@@ -8,13 +8,13 @@ tag: 'work'
 
 ## Overview
 
-Blossom is a Canadian venture-backed startup with $1.5M in funding. Together, we were building an all-in-one investing experience to help retail investors build generational wealth through:
+Blossom is a Canadian venture-backed startup with $2M+ in funding. Together, we were building an all-in-one investing experience to help retail investors build generational wealth through:
 
 - A supportive community
 - Bite-sized educational video modules
 - Visual portfolio insights and analytics.
 
-I joined Blossom when it had under 500 users, leading product strategy and execution until we reached 55,000.
+I joined Blossom when it had under 500 users, leading product strategy and execution while our growth skyrocketed.
 
 During this time, I played a critical role in reshaping the company's initial mission, from becoming a major player in the Canadian investment space to facilitating the global beginner investor experience.
 
